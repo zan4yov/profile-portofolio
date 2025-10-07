@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Terminal Dark Theme - Gen-Z Aesthetic */
+    --background: 220 15% 8%;
+    --foreground: 180 10% 85%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 180 10% 85%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 180 10% 85%;
+
+    /* Cyber Cyan Primary */
+    --primary: 187 100% 50%;
+    --primary-foreground: 220 15% 8%;
+
+    /* Mint Green Secondary */
+    --secondary: 165 80% 65%;
+    --secondary-foreground: 220 15% 8%;
+
+    /* Muted Terminal Gray */
+    --muted: 220 10% 20%;
+    --muted-foreground: 180 5% 60%;
+
+    /* Soft Purple Accent */
+    --accent: 270 60% 65%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 180 10% 85%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 15%;
+    --ring: 187 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Terminal Green for effects */
+    --terminal-green: 142 76% 36%;
+    --glow-cyan: 187 100% 50%;
+    --glow-mint: 165 80% 65%;
+    --glow-purple: 270 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+
+  /* Terminal Cursor Effect */
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .cursor::after {
+    content: '▋';
+    animation: blink 1s infinite;
+    color: hsl(var(--primary));
+  }
+
+  /* Glitch Effect */
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  .glitch {
+    animation: glitch 0.3s infinite;
+  }
+
+  /* Glow Effects */
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(var(--glow-cyan) / 0.5);
+  }
+
+  .glow-mint {
+    box-shadow: 0 0 20px hsl(var(--glow-mint) / 0.5);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(var(--glow-purple) / 0.5);
+  }
+
+  /* Scanline Effect */
+  @keyframes scanline {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
