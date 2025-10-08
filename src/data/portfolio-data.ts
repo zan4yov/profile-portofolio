@@ -107,7 +107,7 @@ export const projects = [
 export const experience = [
   {
     year: "2025 - Present",
-    title: "Data Analyst Internship",
+    title: "Data Analyst Intern",
     company: "Kimia Farma",
     description:
       "professionals tasked with collecting, cleaning, analyzing, and interpreting raw data to discover trends, patterns, and actionable insights for Kimia Farma institutions",
