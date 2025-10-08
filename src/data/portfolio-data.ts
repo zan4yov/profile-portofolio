@@ -61,13 +61,6 @@ export const techStack = [
 // Daftar project
 export const projects = [
   {
-    title: "Mining Area Mapping",
-    description:
-      "Mapping project using GIS tools and satellite imagery to identify potential mining zones.",
-    tags: ["Google Earth Pro", "QGIS", "ArcGIS"],
-    image: project1,
-  },
-  {
     title: "Portfolio Website UMKM Dimdimsum",
     description:
       "Portfolio website for Dimdimsum, a Surabaya-based food and beverage business.",
