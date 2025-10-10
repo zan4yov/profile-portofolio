@@ -7,6 +7,8 @@ import project3 from "@/assets/project-3.jpeg";
 import project4 from "@/assets/project-4.jpeg";
 import project5 from "@/assets/project-5.png";
 import project6 from "@/assets/project-6.png";
+import project7 from "@/assets/project-7.png";
+
 
 export const personalInfo = {
   name: "Razan Widya Reswara",
@@ -99,6 +101,13 @@ export const projects = [
       "Personal finance tracker app to manage income, expenses, and budgets with AI advisor",
     tags: ["Vite", "TypeScript", "React", "Tailwind CSS", "Schadcn UI", "Supabase"],
     image: project6,
+  },
+  {
+    title: "Collaborative Project - WEB APP FRS",
+    description:
+      "Pfinal project from lab based education from ITS AlPro Informatics Lab to create a student KRS website",
+    tags: ["Laravel", "Tailwind CSS", "Vite", "Inertia", "MySQL"],
+    image: project7,
   },
 ];
 
